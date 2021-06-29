@@ -1,1 +1,69 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+*{
+    box-sizing: border-box;
+}
+html,body{
+    margin: 0;
+    padding: 0;
+}
+h2{
+    background: #274046;
+    color: white;
+}
+/* form  */
+.form-container{
+    margin: 20px;
+    padding: 15px;
+    background: #173459;
+    color: white;
+    box-shadow: 0 5px 10px 0 rgba(0,0,0,0.3), 0 7px 21px 0 rgba(0,0,0,0.20);
+
+}
+.input-cnt{
+    display: flex;
+    margin-bottom: 15px;
+}
+/* icons  */
+.input-cnt > i{
+    min-width: 40px;
+    padding: 10px;
+    text-align: center;
+    background: lightgrey;
+    color: white;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+.input-cnt:hover > i{
+    background: #0076ff;
+    color: white;
+}
+
+/* input  */
+.input-cnt > input[type="text"], .input-cnt > input[type="email"], .input-cnt > input[type="password"]{
+    outline: none;
+    border: none;
+    padding: 10px;
+    border: 1px solid lightgrey;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    width: 100%;
+}
+ /* button  */
+ .input-cnt > input[type="submit"]{
+     border: none;
+     border-radius: 20px;
+     outline: none;
+     width: 25%;
+     margin: 0 auto;
+     padding: 15px;
+     font-size: 105%;
+     color: #0076ff;
+     background: white;
+     transition-duration: 0.5s;
+
+ }
+ .input-cnt > input[type="submit"]:hover{
+     color: white;
+     background: #0076ff;
+ }
